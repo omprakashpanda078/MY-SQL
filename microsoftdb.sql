@@ -1,17 +1,14 @@
-CREATE DATABASE microsoftDB;--This is my database
+CREATE DATABASE microsoftDB;
+USE microsoftDB;
 
---in this part we will create a table called employee and insert some data into it.
 CREATE TABLE employee(
   id INT PRIMARY KEY,
   name VARCHAR(50),
-  Salary INT NOT NULL
+  Salary INT DEFAULT 20000
 );
 SHOW DATABASES;
 SHOW TABLES;
---it is the query to select the database we created above.
-USE microsoftDB;
 
---Here we are inserting some data into the employee table.
 INSERT INTO employee
 (id,Name,Salary)
 VALUES
@@ -19,5 +16,6 @@ VALUES
 (2,"BOB",30000),
 (3,"CASEY",40000);
 
---Here we are selecting all the data from the employee table to see the data we inserted.
+Insert INTO employee(id, name, salary) values (5, "Vivek", 5000);
+
 SELECT * FROM employee;

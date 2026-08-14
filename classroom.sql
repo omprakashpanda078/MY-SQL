@@ -1,8 +1,16 @@
+--this is  first sql file.
 
--- This is my first SQL file. It contains the schema for a simple classroom database.
+CREATE DATABASE college;
 
-CREATE TABLE student (
-    id INT PRIMARY KEY,
-    name VARCHAR(50),
-    age INT NOT NULL
+USE college;
+
+CREATE TABLE student(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+age INT NOT NULL
 );
+
+INSERT INTO student VALUES(1,"omprakash",21);
+INSERT INTO student VALUES(2,"vivek",22);
+
+SELECT * FROM student;
